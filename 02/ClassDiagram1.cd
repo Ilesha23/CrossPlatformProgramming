@@ -1,58 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="_01.Product">
-    <Position X="4.5" Y="0.75" Width="1.5" />
+    <Position X="3.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAQAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAQAAAAAEAAAAABQAAAAAAAAAAAAEAAAAAAA=</HashCode>
       <FileName>Product.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="_01.MilkProduct">
-    <Position X="2.5" Y="3.25" Width="1.5" />
+    <Position X="1.5" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAEAAAg=</HashCode>
       <FileName>MilkProduct.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="_01.ChocolateProduct">
-    <Position X="6.75" Y="3.25" Width="1.5" />
+    <Position X="5.75" Y="3" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAABAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>ChocolateProduct.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="_01.Milk">
-    <Position X="1.5" Y="6" Width="1.5" />
+    <Position X="0.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAABAAAAAAACAAA=</HashCode>
       <FileName>Milk.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="_01.Cheese">
-    <Position X="3.5" Y="6" Width="1.5" />
+    <Position X="2.5" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAgAAAAAAAEAAAAAAAAAAAAAAAhAAAAAAAAAAA=</HashCode>
       <FileName>Cheese.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="_01.Cocoa">
-    <Position X="7.75" Y="6" Width="1.5" />
+    <Position X="6.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAABAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
       <FileName>Cocoa.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="_01.Chocolate">
-    <Position X="5.75" Y="6" Width="1.5" />
+    <Position X="4.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAABAAAABgAAAAAAAAAAA=</HashCode>
       <FileName>Chocolate.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="_02.Container">
-    <Position X="11" Y="2.25" Width="1.5" />
+    <Position X="8.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAEAAAAAAgAAAAAAAAAAIAAEAAAA=</HashCode>
+      <HashCode>AAAABAAAAAAAAAAECEAAAKAAkAAAAAAAAAAIAAEAAAA=</HashCode>
       <FileName>Container.cs</FileName>
     </TypeIdentifier>
   </Class>
