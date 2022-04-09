@@ -37,7 +37,7 @@ namespace _01
         }
         public override string ToString()
         {
-            string s = "Name: " + Name + "    Liquid: " + isLiquid + "    Black: " + isBlack + "    Cocoa percent: " + CocoaPercent + "%    Weight: " + weight + "(g)    Price: " + Price;
+            string s = "Name: " + Name + "\tLiquid: " + isLiquid + "\tBlack: " + isBlack + "\tCocoa percent: " + CocoaPercent + "%\tWeight: " + weight + "(g)\tPrice: " + Price;
             return s;
         }
     }

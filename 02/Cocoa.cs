@@ -33,7 +33,7 @@ namespace _01
         }
         public override string ToString()
         {
-            string s = "Name: " + Name + "    Liquid: " + isLiquid + "    With milk: " + isWithMilk + "    Weight: " + weight + "(g)    Price: " + Price;
+            string s = "Name: " + Name + "\tLiquid: " + isLiquid + "\tWith milk: " + isWithMilk + "\tWeight: " + weight + "(g)\tPrice: " + Price;
             return s;
         }
     }

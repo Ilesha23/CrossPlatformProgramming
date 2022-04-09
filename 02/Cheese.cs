@@ -40,7 +40,7 @@ namespace _01
         }
         public override string ToString()
         {
-            string s = "Name: " + Name + "    Soft: " + isSoft + "    Shelf life: " + shelfLifeDays + "day(s)    Fattiness: " + fattiness + "%    Weight: " + weight + "(Kg)    Price: " + Price;
+            string s = "Name: " + Name + "\tSoft: " + isSoft + "\tShelf life: " + shelfLifeDays + "day(s)\tFattiness: " + fattiness + "%\tWeight: " + weight + "(Kg)\tPrice: " + Price;
             return s;
         }
     }
