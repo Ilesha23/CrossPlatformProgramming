@@ -24,16 +24,50 @@ namespace _02
             length = 0;
             arr = null;
         }
-
+        /// <summary>get/set element by index</summary>
         public Product this[int index]
+        {
+            get {
+                if (index >= 0 || index < length)
+                    return arr[index];
+                return null;
+            }
+            set {
+                if (index >= 0 || index < length) 
+                    arr[index] = value;
+            }
+        }
+        /// <summary>get/set element by name</summary>
+        public Product this[string name]
         {
             get
             {
-                return arr[index];
+                for (int i = 0; i < length; i++)
+                    if (arr[i].getName() == name)
+                        return arr[i];
+                return null;
             }
             set
             {
-                arr[index] = value;
+                for (int i = 0; i < length; i++)
+                    if (arr[i].getName() == name)
+                        arr[i] = value;
+            }
+        }
+        /// <summary>get/set element by price</summary>
+        public Product this[decimal price]
+        {
+            get {
+                for (int i = 0; i < length; i++)
+                    if (arr[i].getPrice() == price)
+                        return arr[i];
+                return null;
+            }
+            set
+            {
+                for (int i = 0; i < length; i++)
+                    if (arr[i].getPrice() == price)
+                        arr[i] = value;
             }
         }
 
@@ -99,7 +133,7 @@ namespace _02
             }
             isSorted = true;
         }
-
+        /// <summary>get price of all container</summary>
         public decimal PriceOfAll()
         {
             decimal price = 0.0m;

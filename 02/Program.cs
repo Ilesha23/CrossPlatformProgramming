@@ -22,9 +22,11 @@ namespace _02
             container.push(new Cocoa("Cocoa1", true, true, 90, 30.0m));
             container.push(new Cocoa("Cocoa2", false, false, 100, 40.0m));
 
-            container.sort();
+            Console.WriteLine(container[0].ToString());
+            Console.WriteLine(container["Cheese1"].ToString());
+            Console.WriteLine(container[25.0m].ToString());
 
-            Console.WriteLine(container.ToString());
+            //Console.WriteLine(container.ToString());
         }
     }
 }

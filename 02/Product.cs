@@ -31,10 +31,18 @@ namespace _01
         {
             return Name;
         }
+        public void setName(string name)
+        {
+            this.Name = name;
+        }
 
         public decimal getPrice()
         {
             return Price;
+        }
+        public void setPrice(decimal price)
+        {
+            this.Price = price;
         }
     }
 }
