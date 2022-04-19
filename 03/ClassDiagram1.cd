@@ -49,5 +49,12 @@
       <FileName>Cocoa.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="_02.Container">
+    <Position X="10" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAECEAAAKAAkAAAAAAAAAAIAAEAAAA=</HashCode>
+      <FileName>Container.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
