@@ -1,4 +1,5 @@
 ﻿using _02;
+using _04;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,9 +23,32 @@ namespace _01
             c.push(chocolate);
             c.push(cocoa);
 
-            Console.WriteLine(c[0].ToString());
-            Console.WriteLine(c["Cheese"].ToString());
-            Console.WriteLine(c[20.0m].ToString());
+            try
+            {
+                Console.WriteLine(c[-1].ToString());
+            }
+            catch (MyException e)
+            {
+                Console.WriteLine(e.Message + $": {e.Index}");
+            }
+
+            try
+            {
+                Console.WriteLine(c["Pencil"].ToString());
+            }
+            catch (MyException e)
+            {
+                Console.WriteLine(e.Message + $": {e.Name}");
+            }
+
+            try
+            {
+                Console.WriteLine(c[21.0m].ToString());
+            }
+            catch (MyException e)
+            {
+                Console.WriteLine(e.Message + $": {e.Price}");
+            }
         }
     }
 }

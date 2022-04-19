@@ -1,4 +1,5 @@
 ﻿using _01;
+using _04;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,14 +31,15 @@ namespace _02
         {
             get
             {
-                if (index >= 0 || index < length)
-                    return arr[index];
-                return null;
+                if (index < 0 || index >= length)
+                    throw new MyException("index is out of range", index);
+                return arr[index];
             }
             set
             {
-                if (index >= 0 || index < length)
-                    arr[index] = value;
+                if (index < 0 || index >= length)
+                    throw new MyException("index is out of range", index);
+                arr[index] = value;
             }
         }
         /// <summary>get/set element by name</summary>
@@ -48,13 +50,14 @@ namespace _02
                 for (int i = 0; i < length; i++)
                     if (arr[i].Name == name)
                         return arr[i];
-                return null;
+                throw new MyException("There is no product with this name: ", name);
             }
             set
             {
                 for (int i = 0; i < length; i++)
                     if (arr[i].Name == name)
                         arr[i] = value;
+                throw new MyException("There is no product with this name: ", name);
             }
         }
         /// <summary>get/set element by price</summary>
@@ -65,13 +68,14 @@ namespace _02
                 for (int i = 0; i < length; i++)
                     if (arr[i].Price == price)
                         return arr[i];
-                return null;
+                throw new MyException("There is no product with this price: ", price);
             }
             set
             {
                 for (int i = 0; i < length; i++)
                     if (arr[i].Price == price)
                         arr[i] = value;
+                throw new MyException("There is no product with this price: ", price);
             }
         }
         /// <summary>Add element to back</summary>
