@@ -8,36 +8,41 @@ namespace _01
     public class Chocolate : ChocolateProduct
     {
         protected bool isBlack;
-        protected double CocoaPercent;
-        protected double weight;
-        public Chocolate()
+        protected double cocoaPercent;
+        public Chocolate() :base()
         {
-            Name = "Default";
-            isLiquid = false;
             isBlack = true;
-            CocoaPercent = 0.0;
+            cocoaPercent = 0.0;
             weight = 0.0;
-            Price = 0m;
         }
-        public Chocolate(string name, bool liquid, bool black, double cocoa, double w, decimal price)
+        public Chocolate(string name, bool liquid, bool black, bool sweet, double cocoa, double w, decimal price) :base(name, price, liquid, sweet)
         {
-            Name = name;
-            isLiquid = liquid;
             isBlack = black;
-            CocoaPercent = cocoa;
-            weight = w;
-            Price = price;
-        }
-        public Chocolate(bool liquid, bool black, double cocoa, double w)
-        {
-            isLiquid = liquid;
-            isBlack = black;
-            CocoaPercent = cocoa;
+            cocoaPercent = cocoa;
             weight = w;
         }
+
+        public double CocoaPercent
+        {
+            get { return cocoaPercent; }
+            set { cocoaPercent = value; }
+        }
+
+        public bool IsBlack
+        {
+            get { return isBlack; }
+            set { isBlack = value; }
+        }
+
+        public double Weight
+        {
+            get { return weight; }
+            set { weight = value; }
+        }
+
         public override string ToString()
         {
-            string s = "Name: " + Name + "    Liquid: " + isLiquid + "    Black: " + isBlack + "    Cocoa percent: " + CocoaPercent + "%    Weight: " + weight + "(g)    Price: " + Price;
+            string s = "Name: " + name + "    Liquid: " + isLiquid + "    Black: " + isBlack + "    Cocoa percent: " + cocoaPercent + "%    Weight: " + weight + "(g)    Price: " + price;
             return s;
         }
     }

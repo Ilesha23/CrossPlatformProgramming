@@ -7,36 +7,33 @@ namespace _01
 {
     public class Milk : MilkProduct
     {
-        protected double fattiness;
         protected double volume;
-        public Milk()
+        public Milk() :base()
         {
-            Name = "Default";
-            isLiquid = true;
-            Price = 0m;
             fattiness = 0.0;
             volume = 0.0;
-            shelfLifeDays= 0;
         }
-        public Milk(string name, bool liquid, double fat, double vol, int shelfLife, decimal price)
+        public Milk(string name, bool liquid, double fat, double vol, int shelfLife, decimal price) :base(name, price, liquid, shelfLife)
         {
-            Name = name;
-            isLiquid = liquid;
-            Price = price;
             fattiness = fat;
             volume = vol;
-            shelfLifeDays = shelfLife;
         }
-        public Milk(bool liquid, double fat, double vol, int shelfLife)
+
+        public double Fattiness
         {
-            isLiquid = liquid;
-            fattiness = fat;
-            volume = vol;
-            shelfLifeDays = shelfLife;
+            get { return fattiness; }
+            set { fattiness = value; }
         }
+
+        public double Volume
+        {
+            get { return volume; }
+            set { volume = value; }
+        }
+
         public override string ToString()
         {
-            string s = "Name: " + Name + "    Liquid: " + isLiquid + "    Fattiness: " + fattiness + "%    Volume: " + volume + "(L)    Shelf Life: " + shelfLifeDays + " day(s)    Price: " + Price;
+            string s = "Name: " + name + "    Liquid: " + isLiquid + "    Fattiness: " + fattiness + "%    Volume: " + volume + "(L)    Shelf Life: " + shelfLifeDays + " day(s)    Price: " + price;
             return s;
         }
     }

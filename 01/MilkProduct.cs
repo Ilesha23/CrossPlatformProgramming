@@ -9,21 +9,33 @@ namespace _01
     {
         protected bool isLiquid;
         protected int shelfLifeDays;
-        public MilkProduct()
+        protected double fattiness;
+
+        protected MilkProduct() : base()
         {
-            Name = "Default";
-            Price = 0m;
             isLiquid = false;
+            shelfLifeDays = 0;
         }
-        public MilkProduct(string name, decimal price, bool liquid)
+        protected MilkProduct(string name, decimal price, bool liquid, int shelfLife) : base(name, price)
         {
-            Name = name;
-            Price = price;
             isLiquid = liquid;
         }
+
+        public bool IsLiquid
+        {
+            get { return isLiquid; }
+            set { isLiquid = value; }
+        }
+
+        public int ShelfLifeDays
+        {
+            get { return shelfLifeDays; }
+            set { shelfLifeDays = value; }
+        }
+
         public override string ToString()
         {
-            string s = "Name: " + Name + "    isLiquid: " + isLiquid + "    Price: " + Price;
+            string s = "Name: " + name + "    isLiquid: " + isLiquid + "    Price: " + price;
             return s;
         }
     }

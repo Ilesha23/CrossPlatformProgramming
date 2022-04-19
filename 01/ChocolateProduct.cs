@@ -9,23 +9,34 @@ namespace _01
     {
         protected bool isLiquid;
         protected bool isSweet;
-        public ChocolateProduct()
+        protected double weight;
+
+        protected ChocolateProduct() : base()
         {
-            Name = "Default";
-            Price = 0m;
             isLiquid = false;
             isSweet = false;
         }
-        public ChocolateProduct(string name, decimal price, bool liquid, bool sweet)
+        protected ChocolateProduct(string name, decimal price, bool liquid, bool sweet) : base(name, price)
         {
-            Name = name;
-            Price = price;
             isLiquid = liquid;
             isSweet = sweet;
         }
+
+        public bool IsSweet
+        {
+            get { return isSweet; }
+            set { isSweet = value; }
+        }
+
+        public bool IsLiquid
+        {
+            get { return isLiquid; }
+            set { isLiquid = value; }
+        }
+
         public override string ToString()
         {
-            string s = "Name: " + Name + "    isLiquid: " + isLiquid + "    Sweet: " + isSweet + "    Price: " + Price;
+            string s = "Name: " + name + "    isLiquid: " + isLiquid + "    Sweet: " + isSweet + "    Price: " + price;
             return s;
         }
     }

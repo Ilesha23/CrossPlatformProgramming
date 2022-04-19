@@ -7,40 +7,36 @@ namespace _01
 {
     public class Cheese : MilkProduct
     {
-        protected double fattiness;
         protected double weight;
         protected bool isSoft;
-        public Cheese()
+        public Cheese() :base()
         {
-            Name = "Default";
-            isLiquid = false;
-            shelfLifeDays = 0;
             isSoft = false;
-            Price = 0m;
             fattiness = 0.0;
             weight = 0.0;
         }
-        public Cheese(string name, bool liquid, int ShelfLife, bool soft, double fat, double w, decimal price)
+        public Cheese(string name, bool liquid, int ShelfLife, bool soft, double fat, double w, decimal price) :base(name, price, liquid, ShelfLife)
         {
-            Name = name;
-            isLiquid = liquid;
-            shelfLifeDays = ShelfLife;
-            isSoft = soft;
-            Price = price;
-            fattiness = fat;
-            weight = w;
-        }
-        public Cheese(bool liquid, int ShelfLife, bool soft, double fat, double w)
-        {
-            isLiquid = liquid;
-            shelfLifeDays = ShelfLife;
             isSoft = soft;
             fattiness = fat;
             weight = w;
         }
+
+        public bool IsSoft
+        {
+            get { return IsSoft; }
+            set { IsSoft = value; }
+        }
+
+        public double Weight
+        {
+            get { return weight; }
+            set { weight = value; }
+        }
+
         public override string ToString()
         {
-            string s = "Name: " + Name + "    Soft: " + isSoft + "    Shelf life: " + shelfLifeDays + "day(s)    Fattiness: " + fattiness + "%    Weight: " + weight + "(Kg)    Price: " + Price;
+            string s = "Name: " + name + "    Soft: " + isSoft + "    Shelf life: " + shelfLifeDays + "day(s)    Fattiness: " + fattiness + "%    Weight: " + weight + "(Kg)    Price: " + price;
             return s;
         }
     }
