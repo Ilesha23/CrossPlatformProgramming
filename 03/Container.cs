@@ -46,14 +46,14 @@ namespace _02
             get
             {
                 for (int i = 0; i < length; i++)
-                    if (arr[i].getName() == name)
+                    if (arr[i].Name == name)
                         return arr[i];
                 return null;
             }
             set
             {
                 for (int i = 0; i < length; i++)
-                    if (arr[i].getName() == name)
+                    if (arr[i].Name == name)
                         arr[i] = value;
             }
         }
@@ -63,14 +63,14 @@ namespace _02
             get
             {
                 for (int i = 0; i < length; i++)
-                    if (arr[i].getPrice() == price)
+                    if (arr[i].Price == price)
                         return arr[i];
                 return null;
             }
             set
             {
                 for (int i = 0; i < length; i++)
-                    if (arr[i].getPrice() == price)
+                    if (arr[i].Price == price)
                         arr[i] = value;
             }
         }
@@ -79,7 +79,7 @@ namespace _02
         {
             Resize(length + 1);
             arr[length++] = product;
-            if (length > 1 && string.Compare(arr[length - 2].getName(), arr[length - 1].getName()) == 1)
+            if (length > 1 && string.Compare(arr[length - 2].Name, arr[length - 1].Name) == 1)
             {
                 isSorted = false;
             }
@@ -126,7 +126,7 @@ namespace _02
             {
                 for (int j = i + 1; j < length; j++)
                 {
-                    if (string.Compare(arr[i].getName(), arr[j].getName()) == 1)
+                    if (string.Compare(arr[i].Name, arr[j].Name) == 1)
                     {
                         temp = arr[i];
                         arr[i] = arr[j];
@@ -142,7 +142,7 @@ namespace _02
             decimal price = 0.0m;
             foreach (Product item in arr)
             {
-                price += item.getPrice();
+                price += item.Price;
             }
             return price;
         }

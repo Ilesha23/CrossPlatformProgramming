@@ -8,32 +8,32 @@ namespace _01
     public class Cocoa : ChocolateProduct
     {
         protected bool isWithMilk;
-        protected double weight;
-        public Cocoa()
+        public Cocoa() :base()
         {
-            Name = "Default";
-            isLiquid = false;
             isWithMilk = false;
             weight = 0.0;
-            Price = 0m;
         }
-        public Cocoa(string name, bool liquid, bool milk, double w, decimal price)
+        public Cocoa(string name, bool liquid, bool milk, bool sweet, double w, decimal price) :base(name, price, liquid, sweet)
         {
-            Name = name;
-            isLiquid = liquid;
-            isWithMilk = milk;
-            weight = w;
-            Price = price;
-        }
-        public Cocoa(bool liquid, bool milk, double w)
-        {
-            isLiquid = liquid;
             isWithMilk = milk;
             weight = w;
         }
+
+        public bool IsWithMilk
+        {
+            get { return isWithMilk; }
+            set { isWithMilk = value; }
+        }
+
+        public double Weight
+        {
+            get { return weight; }
+            set { weight = value; }
+        }
+
         public override string ToString()
         {
-            string s = "Name: " + Name + "\tLiquid: " + isLiquid + "\tWith milk: " + isWithMilk + "\tWeight: " + weight + "(g)\tPrice: " + Price;
+            string s = "Name: " + name + "    Liquid: " + isLiquid + "    With milk: " + isWithMilk + "    Weight: " + weight + "(g)    Price: " + price;
             return s;
         }
     }
