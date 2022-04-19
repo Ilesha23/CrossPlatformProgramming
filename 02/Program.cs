@@ -1,32 +1,26 @@
-﻿using _01;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _02
+namespace _01
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Container container = new Container();
+            Milk milk = new Milk("Milk", true, 5, 1.0, 7, 30.0m);
+            Console.WriteLine(milk.ToString());
 
-            container.push(new Milk("Milk1", true, 4, 3, 5, 25.0m));
-            container.push(new Milk("Milk2", true, 5, 1, 10, 30.0m));
-            container.push(new Cheese("Cheese1", true, 25, false, 40, 400, 90.0m));
-            container.push(new Cheese("Cheese2", false, 30, true, 50, 500, 100.0m));
-            container.push(new Chocolate("Choc1", true, false, 45, 100, 30.0m));
-            container.push(new Chocolate("Choc2", false, true, 50, 200, 25.0m));
-            container.push(new Cocoa("Cocoa1", true, true, 90, 30.0m));
-            container.push(new Cocoa("Cocoa2", false, false, 100, 40.0m));
+            Cheese cheese = new Cheese("Cheese", false, 30, true, 50.0, 0.5, 100.0m);
+            Console.WriteLine(cheese.ToString());
 
-            Console.WriteLine(container[0].ToString());
-            Console.WriteLine(container["Cheese1"].ToString());
-            Console.WriteLine(container[25.0m].ToString());
+            Chocolate chocolate = new Chocolate("Choc", false, true, true, 50.0, 500, 20.0m);
+            Console.WriteLine(chocolate.ToString());
 
-            //Console.WriteLine(container.ToString());
+            Cocoa cocoa = new Cocoa("Cocoa", false, true, true, 500, 30.0m);
+            Console.WriteLine(cocoa.ToString());
         }
     }
 }
