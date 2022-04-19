@@ -24,52 +24,6 @@ namespace _02
             length = 0;
             arr = null;
         }
-        /// <summary>get/set element by index</summary>
-        public Product this[int index]
-        {
-            get {
-                if (index >= 0 || index < length)
-                    return arr[index];
-                return null;
-            }
-            set {
-                if (index >= 0 || index < length) 
-                    arr[index] = value;
-            }
-        }
-        /// <summary>get/set element by name</summary>
-        public Product this[string name]
-        {
-            get
-            {
-                for (int i = 0; i < length; i++)
-                    if (arr[i].getName() == name)
-                        return arr[i];
-                return null;
-            }
-            set
-            {
-                for (int i = 0; i < length; i++)
-                    if (arr[i].getName() == name)
-                        arr[i] = value;
-            }
-        }
-        /// <summary>get/set element by price</summary>
-        public Product this[decimal price]
-        {
-            get {
-                for (int i = 0; i < length; i++)
-                    if (arr[i].getPrice() == price)
-                        return arr[i];
-                return null;
-            }
-            set
-            {
-                for (int i = 0; i < length; i++)
-                    if (arr[i].getPrice() == price)
-                        arr[i] = value;
-            }
-        }
 
         /// <summary>Add element to back</summary>
         public void push(Product product)
