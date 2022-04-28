@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="_05.Product">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAQAAAAQEAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Product.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="_05.Milk">
+    <Position X="1.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAEAAAAAAAIAAAACAAA=</HashCode>
+      <FileName>Milk.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_05.Cheese">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAIAAAAAAAAAAAACAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Cheese.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_05.MilkProduct">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAEAAAAAAEAAAAAAAABAAAAAAEAAAg=</HashCode>
+      <FileName>MilkProduct.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_05.ChocolateProduct">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAECAAABAAAAAAEAAAAAAAAAAAAAAAgAAAAAAAAAAg=</HashCode>
+      <FileName>ChocolateProduct.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_05.Chocolate">
+    <Position X="6.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAADAAAABQAAAAQAAAAAA=</HashCode>
+      <FileName>Chocolate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_05.Cocoa">
+    <Position X="8.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAABAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cocoa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_05.Container">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAECEAQACAAgACAAAAAAAAAAAEACAA=</HashCode>
+      <FileName>Container.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_05.MyException">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAQAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>MyException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="_05.IName">
+    <Position X="13.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IName.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
