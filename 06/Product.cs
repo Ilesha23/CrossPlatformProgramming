@@ -2,7 +2,7 @@
 
 namespace _06
 {
-    public abstract class Product : IName
+    public abstract class Product : IName, IName<Product>
     {
         protected string name;
         protected decimal price;
@@ -29,14 +29,14 @@ namespace _06
             set { price = value; }
         }
 
-        public int CompareTo(object obj)
+        public int CompareTo(Product p)
         {
-            if (obj == null) return 1;
-            Product p = obj as Product;
-            if (p != null)
-                return Name.CompareTo(p.Name);
-            else
-                throw new MyException("Object is not a Product");
+            return Name.CompareTo(p.Name);
+        }
+
+        public int CompareTo<T>(T data) where T : IName
+        {
+            return this.Name.CompareTo(data.Name);
         }
 
         public override string ToString()

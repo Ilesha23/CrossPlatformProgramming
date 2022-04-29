@@ -1,6 +1,6 @@
 ﻿namespace _06
 {
-    public class Cheese : MilkProduct, IName
+    public class Cheese : MilkProduct
     {
         protected double weight;
         protected bool isSoft;

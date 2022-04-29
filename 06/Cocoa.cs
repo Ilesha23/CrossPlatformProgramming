@@ -1,6 +1,6 @@
 ﻿namespace _06
 {
-    public class Cocoa : ChocolateProduct, IName
+    public class Cocoa : ChocolateProduct
     {
         protected bool isWithMilk;
         public Cocoa() :base()

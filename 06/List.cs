@@ -19,12 +19,11 @@ namespace _06
             return Data.ToString();
         }
     }
-    public class LinkedList<T>
+    public class LinkedList<T> where T : IName<T>
     {
         private Item<T> head = null;
         private Item<T> tail = null;
         private int count = 0;
-        public bool isSorted = false;
         public int Count { get { return count; } }
         public void Add(T data)
         {
@@ -77,7 +76,7 @@ namespace _06
             {
                 for (int j = i + 1; j < count; j++)
                 {
-                    if (this[i].ToString().CompareTo(this[j].ToString()) == 1)
+                    if (this[i].Data.CompareTo(this[j].Data) > 0)
                     {
                         item.Data = this[i].Data;
                         this[i].Data = this[j].Data;
@@ -90,7 +89,7 @@ namespace _06
         public override string ToString()
         {
             Item<T> temp = head;
-            string s = "Number of products: " + count + "\nIs sorted: " + isSorted + "\n";
+            string s = "Number of items: " + count + "\n";
             for (int i = 0; i < count; i++)
             {
                 s += temp.ToString() + "\n";

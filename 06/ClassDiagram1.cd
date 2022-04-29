@@ -21,7 +21,6 @@
       <HashCode>AAAAAAAgAAAAIAQAAAAAAAAAACAAAAAgAAAAAAAAAAA=</HashCode>
       <FileName>Cheese.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="_06.MilkProduct">
     <Position X="2.75" Y="3.25" Width="1.5" />
@@ -43,7 +42,6 @@
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAADAAAABQAAAAQAAAAAA=</HashCode>
       <FileName>Chocolate.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="_06.Cocoa">
     <Position X="8.25" Y="6.5" Width="1.5" />
@@ -51,7 +49,6 @@
       <HashCode>AAAABAAAAAAAAAQAAAAABAAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Cocoa.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
   </Class>
   <Class Name="_06.MyException">
     <Position X="11.5" Y="5.25" Width="1.5" />
@@ -70,7 +67,7 @@
   <Class Name="_06.Container&lt;T&gt;">
     <Position X="9.25" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAABAAAAAAAAAAECEAQAAAAgACAAAAAAAAAAAEACAA=</HashCode>
+      <HashCode>AAIABAAAAAAAAAAECEAQAAAAgACAAAAAAAAAAAEAAAA=</HashCode>
       <FileName>Container.cs</FileName>
     </TypeIdentifier>
   </Class>

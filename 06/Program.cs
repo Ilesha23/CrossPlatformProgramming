@@ -14,14 +14,16 @@ namespace _06
             Milk m2 = new Milk("milk2", true, 4, 2, 9, 30.0m);
 
             LinkedList<Product> list = new LinkedList<Product>();
-            list.Add(m1);
             list.Add(m2);
+            list.Add(m1);
+            list.Sort();
             Console.WriteLine(list.ToString());
             Console.WriteLine();
 
             Container<Milk> cont = new Container<Milk>();
-            cont.Push(m1);
-            cont.Push(m2);
+            cont.Add(m2);
+            cont.Add(m1);
+            cont.Sort();
             Console.WriteLine(cont.ToString());
         }
     }

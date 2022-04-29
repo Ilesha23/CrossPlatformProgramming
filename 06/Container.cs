@@ -14,7 +14,7 @@ namespace _06
             return Data.ToString();
         }
     }
-    public class Container<T>
+    public class Container<T> where T : IName
     {
         protected Elem<T>[] arr;
         protected int length;
@@ -27,13 +27,8 @@ namespace _06
             arr = new Elem<T>[0];
         }
 
-        ~Container()
-        {
-            length = 0;
-            arr = null;
-        }
+        ~Container() { } 
 
-        /// <summary>get/set element by index</summary>
         public Elem<T> this[int index]
         {
             get
@@ -49,19 +44,15 @@ namespace _06
                 arr[index] = value;
             }
         }
-        /// <summary>Add element to back</summary>
-        public void Push(T data)
+        public void Add(T data)
         {
             Elem<T> el = new Elem<T>(data);
             Resize(length + 1);
             arr[length++] = el;
             if (length > 1 && string.Compare(arr[length - 2].ToString(), arr[length - 1].ToString()) == 1)
-            {
                 isSorted = false;
-            }
         }
 
-        /// <summary>Delete element by index</summary>
         public void Pop(int index)
         {
             if (index >= 0 && index < length)
@@ -94,7 +85,6 @@ namespace _06
             temp = null;
         }
 
-        /// <summary>Sort by Name</summary>
         public void Sort()
         {
             Elem<T>temp = arr[0];
@@ -102,7 +92,7 @@ namespace _06
             {
                 for (int j = i + 1; j < length; j++)
                 {
-                    if (arr[i].ToString().CompareTo(arr[j]) == 1)
+                    if (arr[i].Data.CompareTo(arr[j].Data) > 0)
                     {
                         temp = arr[i];
                         arr[i] = arr[j];
@@ -115,7 +105,7 @@ namespace _06
 
         public override string ToString()
         {
-            string s = "Number of products: " + length + "\nIs sorted: " + isSorted + "\n";
+            string s = "Number of items: " + length + "\nIs sorted: " + isSorted + "\n";
             foreach (Elem<T> item in arr)
             {
                 s = s + item.ToString() + "\n";

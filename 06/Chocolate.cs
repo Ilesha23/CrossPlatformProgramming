@@ -1,6 +1,6 @@
 ﻿namespace _06
 {
-    public class Chocolate : ChocolateProduct, IName
+    public class Chocolate : ChocolateProduct
     {
         protected bool isBlack;
         protected double cocoaPercent;

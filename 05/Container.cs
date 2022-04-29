@@ -100,7 +100,7 @@
                     }
                 }
                 arr = temp;
-                temp = null;
+                length--;
             }
         }
 
