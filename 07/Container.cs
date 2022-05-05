@@ -1,10 +1,12 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
-namespace _06
+namespace _07
 {
-    public class Container<T> where T : IName<T>
+    public class Container<T> : IEnumerable<T> where T : IName<T>
     {
-        protected T[] arr;
+        T[] arr;
         protected int length;
         protected bool isSorted;
 
@@ -16,6 +18,11 @@ namespace _06
         }
 
         ~Container() { } 
+
+        public int Length
+        {
+            get { return length; }
+        }
 
         public T this[int index]
         {
@@ -37,24 +44,16 @@ namespace _06
             get
             {
                 for (int i = 0; i < length; i++)
-                {
-                    if (arr[i].Name == name)
-                    {
-
+                    if (name.CompareTo(arr[i]) == 0)
                         return arr[i];
-                    }
-                }
-                throw new MyException("no item");
+                throw new MyException("There is no product with this name: ", name);
             }
             set
             {
                 for (int i = 0; i < length; i++)
-                {
                     if (arr[i].Name == name)
-                    {
                         arr[i] = value;
-                    }
-                }
+                throw new MyException("There is no product with this name: ", name);
             }
         }
         public void Add(T data)
@@ -105,7 +104,7 @@ namespace _06
             {
                 for (int j = i + 1; j < length; j++)
                 {
-                    if (arr[i].CompareTo(arr[j]) > 0)
+                    if (arr[i].CompareTo(arr[j])/*arr[i].Data.CompareTo(arr[j].Data)*/ > 0)
                     {
                         temp = arr[i];
                         arr[i] = arr[j];
@@ -124,6 +123,16 @@ namespace _06
                 s = s + item.ToString() + "\n";
             }
             return s;
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            return new ContainerEnum<T>(this);
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
     }
 }

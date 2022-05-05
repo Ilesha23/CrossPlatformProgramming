@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="_06.Product">
+  <Class Name="_07.Product">
     <Position X="5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAQAAAAQEAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
@@ -8,77 +8,102 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="_06.Milk">
+  <Class Name="_07.Milk">
     <Position X="1.75" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAEAAAAAAAIAAAACAAA=</HashCode>
       <FileName>Milk.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="_06.Cheese">
+  <Class Name="_07.Cheese">
     <Position X="4" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAgAAAAIAQAAAAAAAAAACAAAAAgAAAAAAAAAAA=</HashCode>
       <FileName>Cheese.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="_06.MilkProduct">
+  <Class Name="_07.MilkProduct">
     <Position X="2.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAACAAAAAAAAAAEAAAAAAEAAAAAAAABAAAAAAEAAAg=</HashCode>
       <FileName>MilkProduct.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="_06.ChocolateProduct">
+  <Class Name="_07.ChocolateProduct">
     <Position X="7.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAECAAABAAAAAAEAAAAAAAAAAAAAAAgAAAAAAAAAAg=</HashCode>
       <FileName>ChocolateProduct.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="_06.Chocolate">
+  <Class Name="_07.Chocolate">
     <Position X="6.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAADAAAABQAAAAQAAAAAA=</HashCode>
       <FileName>Chocolate.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="_06.Cocoa">
+  <Class Name="_07.Cocoa">
     <Position X="8.25" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAABAAAAAAAAAQAAAAABAAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Cocoa.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="_06.MyException">
+  <Class Name="_07.MyException">
     <Position X="11.5" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAAAAAAAAAAAQAAAAAAAAAAAEAAAAAAAA=</HashCode>
       <FileName>MyException.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="_06.Container&lt;T&gt;">
-    <Position X="9.25" Y="0.75" Width="1.5" />
+  <Class Name="_07.Elem&lt;T&gt;">
+    <Position X="11" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIABAAAAAAAAAAECEAQAAAAgACAAAAAAAAAAAEAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
       <FileName>Container.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="_06.Item&lt;T&gt;">
-    <Position X="14" Y="0.75" Width="1.5" />
+  <Class Name="_07.Container&lt;T&gt;">
+    <Position X="9.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIABAAAAAAAABAECEAQAABAgACAAAAEAAAAAAEAAAA=</HashCode>
+      <FileName>Container.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="_07.LinkedList&lt;T&gt;">
+    <Position X="15.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAgAAAABAEDAAQAAQAAAEAAAAEAAAAAAAAAgA=</HashCode>
+      <FileName>List.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="_07.ContainerEnum&lt;T&gt;">
+    <Position X="12.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAABAAAAACAIAAAAAAAAAAAogAAAAAAAAA=</HashCode>
+      <FileName>ContainerEnum.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="_07.LinkedListEnum&lt;T&gt;">
+    <Position X="19.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAACAABAAAAACAIAAAAAAAAAAAoAAAAAAAAAA=</HashCode>
+      <FileName>LinkedListEnum.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="_07.Item&lt;T&gt;">
+    <Position X="17.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AgAAAAAAAAAAAAAEAAAAAAAAAAAAAFAAAAAAAAAAAAA=</HashCode>
       <FileName>List.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="_06.LinkedList&lt;T&gt;">
-    <Position X="15.75" Y="0.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAIAAAAAgAAAAAAEDAAQAAQAAAEAAAAAAAAAAAAAAgA=</HashCode>
-      <FileName>List.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Interface Name="_06.IName">
+  <Interface Name="_07.IName">
     <Position X="13.25" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAQAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>

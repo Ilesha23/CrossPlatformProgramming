@@ -20,7 +20,7 @@ namespace _06
             Console.WriteLine(list.ToString());
             Console.WriteLine();
 
-            Container<Milk> cont = new Container<Milk>();
+            Container<Product> cont = new Container<Product>();
             cont.Add(m2);
             cont.Add(m1);
             cont.Sort();
